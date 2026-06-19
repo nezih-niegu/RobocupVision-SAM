@@ -1,0 +1,11 @@
+.env
+outputs/
+outputs_0.1s/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+AllVideos/

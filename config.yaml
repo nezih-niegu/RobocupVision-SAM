@@ -1,0 +1,28 @@
+input_dir: AllVideos
+output_dir: outputs_0.1s
+frame_interval_sec: 0.1
+max_image_side: 1280
+api_delay_sec: 0.3
+max_retries: 3
+segmentation_mode: sam3_api
+output_prob_thresh: 0.25
+min_annotation_area: 100
+classes:
+  - playing field
+  - allied robots
+  - rival robots
+  - ball
+roboflow:
+  api_url: https://serverless.roboflow.com
+  workspace: hackatonfemsa
+  workflow_id: custom-workflow
+annotation_render:
+  output_dir: annotated
+  mask_alpha_default: 0.45
+  mask_alpha_by_class:
+    playing field: 0.20
+  class_colors_bgr:
+    playing field: [0, 180, 0]
+    allied robots: [255, 120, 0]
+    rival robots: [0, 0, 255]
+    ball: [0, 255, 255]
