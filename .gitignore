@@ -1,0 +1,21 @@
+# Videos
+*.mp4
+Videos/
+
+# Archives
+*.zip
+
+# Metadata exports
+metadata/
+
+# Generated/cache
+outputs/
+__pycache__/
+*.pyc
+
+# Cloned model repos
+sam3/
+
+# Common Python/venv stuff
+*.egg-info/
+.ipynb_checkpoints/
